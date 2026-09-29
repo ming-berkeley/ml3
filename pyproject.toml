@@ -1,0 +1,23 @@
+[project]
+name = "ml3"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Ming Cho", email = "ming.cho@berkeley.edu" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "jupyterlab>=4.6.3",
+    "matplotlib>=3.11.2",
+    "pandas>=3.0.5",
+    "scikit-learn>=1.9.1",
+    "scipy>=1.18.1",
+]
+
+[project.scripts]
+ml3 = "ml3:main"
+
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13.0"]
+build-backend = "uv_build"
